@@ -174,3 +174,7 @@ h2 {
   font-size: 1.1em;
   font-weight: normal;
 }
+
+p {
+  text-align: left;
+}
