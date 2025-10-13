@@ -510,15 +510,7 @@ function success(pos) {
 const userlat = pos.coords.latitude;
 const userlng = pos.coords.longitude;
 const accuracy = pos.coords.accuracy;
-// Removes any existing marker and circule (new ones about to be set)
 usercircle = L.circle([userlat, userlng], { radius: accuracy }).addTo(map);
-// Adds marker to the map and a circle for accuracy
-if (!zoomed) {
-zoomed = map.fitBounds(usercircle.getBounds()); 
-}
-// Set zoom to boundaries of accuracy circle
-map.setView([userlat, userlng]);
-// Set map focus to current user position
 }
 function error(err) {
 if (err.code === 1) {
