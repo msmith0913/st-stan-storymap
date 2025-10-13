@@ -510,7 +510,7 @@ function success(pos) {
 const userlat = pos.coords.latitude;
 const userlng = pos.coords.longitude;
 const accuracy = pos.coords.accuracy;
-if (usercircle) {
+if (marker) {
 map.removeLayer(usercircle);
 }
 usercircle = L.circle([userlat, userlng], { radius: accuracy }).addTo(map);
