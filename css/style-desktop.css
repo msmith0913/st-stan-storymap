@@ -3,7 +3,6 @@
   #narration {
     width: 50vw;
     height: 100vh;
-    max-width: 500px;
     top: 0;
   }
 
@@ -16,8 +15,7 @@
   }
 
   #title {
-    width: 60vw;
-    max-width: 500px;
+    width: 50vw;
     top: 0;
   }
 
