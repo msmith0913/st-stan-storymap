@@ -128,12 +128,12 @@ $(window).on('load', function() {
     var markActiveColor = function(k) {
       /* Removes marker-active class from all markers */
       for (var i = 0; i < markers.length; i++) {
-        if (markers[i] && markers[i]._icon) {
-          markers[i]._icon.className = markers[i]._icon.className.replace(' marker-active', '');
+        if (markers[i] && markers[i]._content) {
+          markers[i]._content.className = markers[i]._content.className.replace(' marker-active', '');
 
           if (i == k) {
             /* Adds marker-active class, which is orange, to marker k */
-            markers[k]._icon.className += ' marker-active';
+            markers[k]._content.className += ' marker-active';
           }
         }
       }
@@ -157,14 +157,14 @@ $(window).on('load', function() {
 
         markers.push(
           L.marker([lat, lon], {
-            icon: L.ExtraMarkers.icon({
-              icon: 'fa-number',
-              number: c['Marker'] === 'Numbered'
+            content: L.ExtraMarkers.content({
+              content: 'fa-number',
+              content: c['Marker'] === 'Numbered'
                 ? chapterCount
                 : (c['Marker'] === 'Plain'
                   ? ''
                   : c['Marker']), 
-              markerColor: c['Marker Color'] || 'blue'
+              color: c['Marker Color'] || 'blue'
             }),
             opacity: c['Marker'] === 'Hidden' ? 0 : 0.9,
             interactive: c['Marker'] === 'Hidden' ? false : true,
