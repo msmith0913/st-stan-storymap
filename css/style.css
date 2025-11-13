@@ -140,6 +140,9 @@ a.source:visited {
 */
 .marker-active {
   background-position: -72px 0 !important;
+  color: cornflowerblue;
+  accentColor: royalblue;
+  svg: PinStarBorder;
 }
 
 /* Storymap logo image above the title */
