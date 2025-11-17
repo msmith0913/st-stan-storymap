@@ -168,7 +168,7 @@ $(window).on('load', function() {
                   ? ''
                   : c['Marker']), 
               shape: 'star',
-              markerColor: c['Marker Color'] || 'blue'
+              markerColor: 'blue'
             }),
             opacity: c['Marker'] === 'Hidden' ? 0 : 0.9,
             interactive: c['Marker'] === 'Hidden' ? false : true,
