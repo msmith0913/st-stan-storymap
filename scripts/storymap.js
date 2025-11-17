@@ -133,7 +133,6 @@ $(window).on('load', function() {
           }
         }
       }
-    }
 
     var pixelsAbove = [];
     var chapterCount = 0;
