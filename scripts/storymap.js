@@ -134,7 +134,7 @@ $(window).on('load', function() {
           if (i == k) {
             /* Adds marker-active class, which is orange, to marker k */
             markers[k]._icon.className += ' marker-active';
-            markers[k]._icon.className.replace('blue', 'violet');
+            markers[k]._icon.className.replace('orange', 'violet');
           }
         }
       }
