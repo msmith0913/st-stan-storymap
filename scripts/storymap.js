@@ -125,11 +125,22 @@ $(window).on('load', function() {
 
     var markers = [];
 
+    function wildcardMatch(text, pattern) {
+    const regexPattern =
+        new RegExp('^' + pattern.replace(/\?/g, '.').replace(/\*/g, '.*') + '$');
+    return regexPattern.test(text);
+    }
+
     var markActiveColor = function(k) {
       /* Removes marker-active class from all markers */
       for (var i = 0; i < markers.length; i++) {
         if (markers[i] && markers[i]._icon) {
           markers[i]._icon.className = markers[i]._icon.className.replace(' marker-active', '');
+
+        if (i == k) {
+          /* Adds marker-active class, which is orange, to marker k */
+          markers[k]._icon.markerColor.replace(wildcardMatch, 'violet');
+          }
           }
         }
       }
