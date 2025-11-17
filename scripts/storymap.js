@@ -125,12 +125,6 @@ $(window).on('load', function() {
 
     var markers = [];
 
-    function wildcardMatch(text, pattern) {
-    const regexPattern =
-        new RegExp('^' + pattern.replace(/\?/g, '.').replace(/\*/g, '.*') + '$');
-    return regexPattern.test(text);
-    }
-
     var markActiveColor = function(k) {
       /* Removes marker-active class from all markers */
       for (var i = 0; i < markers.length; i++) {
@@ -139,7 +133,7 @@ $(window).on('load', function() {
 
         if (i == k) {
           /* Adds marker-active class, which is orange, to marker k */
-          markers[k]._icon.markerColor.replace(wildcardMatch, 'violet');
+          markers[k]._icon.markerColor.replace('blue', 'violet');
           }
           }
         }
