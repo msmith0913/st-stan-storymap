@@ -131,13 +131,16 @@ $(window).on('load', function() {
         if (markers[i] && markers[i]._icon) {
           markers[i]._icon.className = markers[i]._icon.className.replace(' marker-active', '');
 
-        if (i == k) {
-          /* Adds marker-active class, which is orange, to marker k */
-          markers[k]._icon.markerColor.replace('blue', 'violet');
-          }
+          if (i == k) {
+            /* Adds marker-active class, which is orange, to marker k */
+            markers[k]._icon.markerColor.replace('blue', 'violet');
           }
         }
       }
+    }
+    
+      /*    markers[k]._icon.markerColor.replace('blue', 'violet'); */
+
 
     var pixelsAbove = [];
     var chapterCount = 0;
