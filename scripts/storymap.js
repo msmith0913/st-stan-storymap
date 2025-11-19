@@ -162,7 +162,7 @@ $(window).on('load', function() {
         markers.push(
           L.marker([lat, lon], {
             icon: L.ExtraMarkers.icon({
-              icon: 'fa-coffee',
+              icon: 'fa-number',
               number: c['Marker'] === 'Numbered'
                 ? chapterCount
                 : (c['Marker'] === 'Plain'
