@@ -162,14 +162,16 @@ $(window).on('load', function() {
         markers.push(
           L.marker([lat, lon], {
             icon: L.ExtraMarkers.icon({
-              icon: 'fa-number',
+              icon: 'fa-coffee',
               number: c['Marker'] === 'Numbered'
                 ? chapterCount
                 : (c['Marker'] === 'Plain'
                   ? ''
                   : c['Marker']), 
               shape: 'star',
-              markerColor: 'blue'
+              markerColor: 'blue',
+              iconColor: 'black',
+              iconRotate: 90,
             }),
             opacity: c['Marker'] === 'Hidden' ? 0 : 0.9,
             interactive: c['Marker'] === 'Hidden' ? false : true,
