@@ -1,7 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Forum", serif;
   overflow: hidden;
 }
 
@@ -55,6 +55,7 @@ body {
   visibility: hidden;
   font-weight: bold;
   text-align: center;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .chapter-container {
