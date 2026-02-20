@@ -99,8 +99,9 @@ body {
 .chapter-header {
   display: block;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding: 0 5px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .source {
@@ -115,7 +116,7 @@ a.source:visited {
 .description {
   margin: 20px;
   text-align: left;
-  font-size: 11pt;
+  font-size: 13pt;
   padding: 20px;
 }
 
@@ -168,13 +169,14 @@ a.source:visited {
 /* Storymap title & subtitle */
 h1 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 h2 {
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-weight: normal;
+  font-family: "Forum", serif;
 }
 
 p {
