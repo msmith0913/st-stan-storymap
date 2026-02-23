@@ -169,12 +169,12 @@ a.source:visited {
 /* Storymap title & subtitle */
 h1 {
   margin: 0;
-  font-size: 1.75em;
+  font-size: 2em;
 }
 
 h2 {
   margin: 0;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: normal;
   font-family: "Forum", serif;
 }
